@@ -18,11 +18,9 @@
 //#define TENOutputValue(type, value) \
 //    TENOutput_##type(##value);
 
-
 TENOutputValueGenerate(int, d)
 TENOutputValueGenerate(float, 5.2f)
 TENOutputValueGenerate(char, c)
-
 
 int main(int argc, const char * argv[]) {
     
@@ -31,9 +29,6 @@ int main(int argc, const char * argv[]) {
 //    TENOutput_char(42);
     
     TENOutputValue(int, 45);
-  
-//    char *str = "4242";
-    
-    
+
     return 0;
 }
